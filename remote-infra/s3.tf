@@ -1,10 +1,6 @@
 resource "aws_s3_bucket" "remote_s3" {
-  bucket = "798-nishant"
-
-  lifecycle {
-    prevent_destroy = true
-    ignore_changes = [bucket]
-  }
+  bucket        = "798-nishant"
+  force_destroy = true  # Added to allow bucket deletion with objects
 
   tags = {
     Name        = "my-bucket"
