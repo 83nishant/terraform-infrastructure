@@ -1,7 +1,7 @@
 resource "aws_dynamodb_table" "basic-dynamodb-table" {
-  name           = "my-state-table"
-  billing_mode   = "PAY_PER_REQUEST"
-  hash_key       = "LockID"
+  name         = "my-state-table-new"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "LockID"
 
   attribute {
     name = "LockID"
@@ -9,6 +9,6 @@ resource "aws_dynamodb_table" "basic-dynamodb-table" {
   }
 
   tags = {
-    Name        = "my-state-table"
+    Name = "my-state-table"
   }
 }
