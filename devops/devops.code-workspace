@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../eks-cluster"
+		},
+		{
+			"path": "../modules"
+		},
+		{
+			"path": "../remote-infra"
+		}
+	]
+}
